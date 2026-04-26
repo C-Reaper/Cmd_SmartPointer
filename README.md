@@ -1,193 +1,77 @@
-# Cmd_Pointer
+# Project README
 
+## Overview
+- This project demonstrates the use of smart pointers in a C program, specifically shared and unique pointers. The code is designed to be platform-independent using conditional compilation.
 
-## Project Overview
+## Features
+- Shared Pointer (SharedPointer)
+- Unique Pointer (UniquePointer)
 
-This project implements specialized functionality related to pointer.
-
-## Core Components
-
-### Main Functionality
-- Implements core algorithms for pointer
-- Efficient data structures
-- Optimized performance
-- Clean code organization
-
-### Technical Features
-- C/C++ implementation
-- Dynamic memory management
-- Platform-independent design
-- Real-time capable
-
-### Architecture
-- Module separation
-- Clear interface design
-- Proper abstraction layers
-- Extensible design
-
-## Use Cases
-- Production systems
-- Educational purposes
-- Research applications
-- Performance-critical operations
-
-## Performance Characteristics
-- Optimized algorithms
-- Efficient memory usage
-- Scalable architecture
-- Minimal overhead
-
-## Implementation Quality
-- Well-organized code
-- Meaningful naming
-- Proper error handling
-- Memory management
-
-## Build and Deployment
-- Standard C/C++ compilation
-- Makefile-based building
-- Cross-platform support
-- Easy integration
-
-
-## Building the Project
+## Project Structure
+- `build/`: Contains executable files produced by compiling `Main.c`.
+- `src/`: Contains the source code for the project.
+  - `Main.c`: The entry point of the program, demonstrating the usage of shared and unique pointers.
 
 ### Prerequisites
-- C/C++ Compiler (GCC, Clang, or MSVC)
+- C/C++ Compiler and Debugger (GCC, Clang)
 - Make utility
-- Standard development tools
 
-### Build Steps
+## Build & Run
+To build and run the project, follow these steps:
 
-1. Navigate to project directory:
-```bash
-cd Cmd_Pointer
-```
+1. **Navigate to the Project Directory:**
+   ```sh
+   cd /path/to/project
+   ```
 
-2. Build the project:
-```bash
-make -f Makefile.(os) all
-```
+2. **Build for Linux:**
+   ```sh
+   make -f Makefile.linux all
+   ```
 
-3. For clean rebuild:
-```bash
-make -f Makefile.(os) clean
-make -f Makefile.(os) all
-```
+3. **Build for Windows (using GCC):**
+   ```sh
+   make -f Makefile.windows all
+   ```
 
-4. If there are ./bin and ./libs directories, build libs with:
-```bash
-make -f Makefile.(os) cleanlib
-make -f Makefile.(os) lib
-```
+4. **Build for Wine:**
+   ```sh
+   make -f Makefile.wine all
+   ```
 
-### Build Options
-```bash
-make -f Makefile.(os) all         # build output
-make -f Makefile.(os) do        # build + exe output
-make -f Makefile.(os) clean   # Remove build artifacts
-```
+5. **Build for WebAssembly:**
+   ```sh
+   make -f Makefile.web all
+   ```
 
-## Running the Project
+6. **Run the Executable:**
+   - After building, you can run the executable using:
+     ```sh
+     make -f Makefile.(os) exe
+     ```
 
-Execute the compiled binary:
+7. **Clean and Rebuild (Linux):**
+   ```sh
+   make -f Makefile.linux clean
+   make -f Makefile.linux all
+   ```
 
-```bash
-./build/Main(.exe)
-```
+8. **Clean and Rebuild (Windows):**
+   ```sh
+   make -f Makefile.windows clean
+   make -f Makefile.windows all
+   ```
 
-Or using make:
-```bash
-make -f Makefile.(os) exe
-```
+9. **Clean and Rebuild (Wine):**
+   ```sh
+   make -f Makefile.wine clean
+   make -f Makefile.wine all
+   ```
 
-## Project Organization
+10. **Clean and Rebuild (WebAssembly):**
+    ```sh
+    make -f Makefile.web clean
+    make -f Makefile.web all
+    ```
 
-```
-Cmd_Pointer/
-├── src/
-│   ├── Main.c          # Entry point
-│   └── *.c             # Implementation files
-├── Makefile            # Build configuration
-└── README.md           # This file
-```
-
-## Technical Details
-
-### Language: C/C++
-- Performance-oriented
-- Direct hardware access where needed
-- Memory efficient
-- Widely portable
-
-### Key Technologies
-- Standard C library
-- System-specific libraries as needed
-- Algorithm optimization
-- Efficient data structures
-
-### Code Quality
-- Clean, readable implementation
-- Proper error handling
-- Resource management
-- Well-documented algorithms
-
-## Development Notes
-
-### Architecture Decisions
-- Modular design for reusability
-- Efficient algorithms for performance
-- Clear separation of concerns
-- Extensible structure
-
-### Performance Optimizations
-- Algorithm efficiency
-- Memory layout optimization
-- Cache-conscious programming
-- Minimal overhead
-
-### Portability
-- Cross-platform compatible
-- Platform-specific optimizations where possible
-- Standard library usage
-- No external dependencies (where feasible)
-
-## Troubleshooting
-
-### Build Issues
-- Ensure compiler is installed
-- Check file paths and permissions
-- Verify Make installation
-- Review compiler error messages
-
-### Runtime Issues
-- Check input data validity
-- Verify file accessibility
-- Ensure sufficient memory
-- Review output format
-
-### Performance Issues
-- Check compiler optimization flags
-- Profile hot code paths
-- Review algorithm complexity
-- Consider input size
-
-## Future Improvements
-
-Potential enhancements:
-- Additional optimization opportunities
-- Extended functionality
-- Platform-specific optimizations
-- Performance profiling
-
-## References
-
-For technical background:
-- Algorithm textbooks
-- Computer science references
-- Language documentation
-- Online educational resources
-
----
-
-*Project implementing practical algorithms and data structures in C/C++*
+These steps ensure that you can build the project for different platforms and run the executable as needed.
